@@ -1,0 +1,69 @@
+{
+	"examList": [
+		{
+			"id": 1,
+			"name": "test1",
+			"startTime": "today",
+			"school": "scut",
+			"signupTime": "tomorrow",
+			"examSubject": "english",
+			"hold": 1,
+			"invigilateHire": 400
+
+		}
+	],
+	"userList": [
+		{
+			"id": 1,
+			"name": "嘉信",
+			"sex": 1,
+			"degree": 1,
+			"idendity": 1,
+			"enrollYear": 2017,
+			"school": "scut",
+			"cardNum": 12312324,
+			"status": 0
+		},
+		{
+			"id": 2,
+			"name": "嘉信2",
+			"sex": 1,
+			"degree": 1,
+			"idendity": 1,
+			"enrollYear": 2017,
+			"school": "scut",
+			"cardNum": 12312324,
+			"status": 0
+		}
+	],
+	"signupUserList": [
+		{
+			"id": 1,
+			"name": "嘉信",
+			"idendity": 1,
+			"sex": 0,
+			"degree": 0,
+			"enrollYear": 2017,
+			"school": "scut",
+			"cardNum": 12312324,
+			"status": 0
+		},
+		{
+			"id": 2,
+			"name": "嘉信2",
+			"idendity": 1,
+			"sex": 0,
+			"degree": 0,
+			"enrollYear": 2017,
+			"school": "scut",
+			"cardNum": 12312324,
+			"status": 0
+		}
+	],
+	"userAudit": {
+		"id": 1,
+		"status": 0
+	}
+}
+
+
