@@ -14,9 +14,12 @@ app.use(express.static('public'));
 
 // 解决跨域问题
 app.all('*',function (req, res, next) {
+  console.log(req);
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With, authKey, sessionid');
+  // res.header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, authKey, sessionId");
   res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+
 
   if (req.method == 'OPTIONS') {
     res.send(200); /让options请求快速返回/
