@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    window.addEventListener('unload', logData, false);
+    var analyticsData = 'test'
+
+    function logData() {
+        var client = new XMLHttpRequest();
+        client.open("GET", "http://127.0.0.1:3000/log", false); // 第三个参数表明是同步的 xhr
+        client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+        client.send(analyticsData);
+    }
+  </script>
+  
+  <script>
+    // window.addEventListener('unload', logData, false);
+    // var analyticsData = 'test'
+
+    // function logData() {
+    //   navigator.sendBeacon("http://127.0.0.1:3000/log", analyticsData);
+    // }
+  </script>
+</body>
+</html>

@@ -29,6 +29,16 @@ app.all('*',function (req, res, next) {
   }
 });
 
+// send beacon 
+app.get('/log', function (req, res) {
+  var result = {};
+  console.log(req);
+  result.data = 'ok';
+  result.errcode = 0;
+  result.errmsg = '';
+  res.end(JSON.stringify(result));
+});
+
 // mock 数据写法
 // 获取注册用户列表
 app.get('/user/list', function (req, res) {
